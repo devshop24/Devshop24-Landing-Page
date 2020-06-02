@@ -21,8 +21,8 @@ router.get('/', async (req, res) => {
 //@desc post new Subscriber
 //@access Public
 router.post('/', async (req, res) => {
-
     const newsub = new Subscribers(req.body);
+
     try {
         const newSubscriber = await newsub.save();
         if(!newSubscriber) throw Error("Something went wrong with adding new subscriber")

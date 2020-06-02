@@ -1,16 +1,24 @@
 const server = require( 'express' )();
 const routes = require( './routes' );
-import app from "./app.js"
-import config from './config';
+const middleware = require( './middleware' );
+const mongoose = require( 'mongoose' );
+const config = require( './config' );
 
-const { PORT } = config;
+const { MONGO_URI, MONGO_DB_NAME } = config;
+const db = `${MONGO_URI}/${MONGO_DB_NAME}`;
 
-app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
+mongoose
+  .connect(db, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+  }) 
+  .then(() => console.log('MongoDB Connected...'))
+  .catch(err => console.log(err));
 
-// TODO - import middleware
 
 server.set( 'view engine', 'ejs' );
+server.use( middleware );
 server.use( routes );
-
 
 module.exports = server;

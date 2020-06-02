@@ -1,11 +1,12 @@
-// const server = require( './server' );
+const server = require( './server' );
+const config = require( './config' );
 
-// const PORT = process.env.PORT || '5000';
+const { PORT } = config;
 
-// server.listen(PORT, () => {
-//     console.log(
-//         `\n************************************************************
-//          \n\t\tServer Running on port:${PORT}
-//          \n************************************************************`
-//     )
-// });
+server.listen(PORT, () => {
+    console.log(
+        `\n************************************************************
+         \n\t\tServer Running on port:${PORT}
+         \n************************************************************`
+    )
+});
