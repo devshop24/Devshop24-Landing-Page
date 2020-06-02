@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // DB Config
 const db = `${MONGO_URI}/${MONGO_DB_NAME}`;
-console.log(db, "db")
+
 // Connect to Mongo
 mongoose
   .connect(db, {
@@ -29,6 +29,7 @@ mongoose
 
   //routes
   app.use("/api/subscribers", subRoutes)
+
 
 
 export default app;
