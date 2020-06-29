@@ -5,7 +5,7 @@ const router = Router();
 
 //@route api/subscribers
 //@desc get all subscribers
-//@access Public
+//@access Private
 
 router.get('/', async (req, res) => {
     try{
@@ -20,6 +20,7 @@ router.get('/', async (req, res) => {
 //@route api/subscriber
 //@desc post new Subscriber
 //@access Public
+
 router.post('/', async (req, res) => {
     const newsub = new Subscribers(req.body);
 

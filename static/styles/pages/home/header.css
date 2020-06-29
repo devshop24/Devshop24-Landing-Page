@@ -1,0 +1,65 @@
+header {
+    height: 100vh;
+    margin: 0;
+
+    background-color: navy;
+    background-image: url('/images/background-img.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+header div {
+    height: 100%;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 72px;
+}
+
+header div h1 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 63px;
+
+    color: #E5E5E5;
+}
+
+header div p {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #E5E5E5;
+
+    margin: 50px 0;
+}
+
+header div a {
+    text-align: center;
+
+    width: 361px;
+    height: 62px;
+
+    background: #ED9738;
+    border-radius: 2px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+
+    line-height: 60px;
+    text-decoration: none;
+
+    color: #DBF2FE;
+
+    cursor: pointer;
+}

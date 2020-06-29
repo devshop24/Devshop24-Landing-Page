@@ -1,4 +1,4 @@
-const server = require( 'express' )();
+const express = require( 'express' );
 const routes = require( './routes' );
 const middleware = require( './middleware' );
 const mongoose = require( 'mongoose' );
@@ -17,7 +17,10 @@ mongoose
   .catch(err => console.log(err));
 
 
+const server = express();
+
 server.set( 'view engine', 'ejs' );
+server.use( express.static( __dirname + '/static' ));
 server.use( middleware );
 server.use( routes );
 
