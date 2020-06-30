@@ -4,20 +4,22 @@
 
         <div class="contact__form__fields">
             <div class="left-form">
-                <div>
-                    <label for="name">What is your full name?</label>
-                    <input type="text" name="name">
+                <div class="left-form__text">
+                    <div>
+                        <label for="name">What is your full name?</label>
+                        <input type="text" name="name">
+                    </div>
+    
+                    <div>
+                        <label for="email">What is your email address?</label>
+                        <input type="text" name="email">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="email">What is your email address?</label>
-                    <input type="text" name="email">
-                </div>
-
-                <div>
+                <div class="left-form__radio">
                     <label for="work-type">What kind of creative work you need help with? Read about our services <span>here</span>.</label>
 
-                    <div>
+                    <div class="left-form__radio__options">
                         <div>
                             <input type="radio" name="service" value="web-development">
                             <label for="web-development">Web Development</label>
@@ -52,7 +54,12 @@
             </div>
 
             <div class="right-form">
+                <div>
+                    <label for="details">What is your project about?</label>
+                    <textarea name="details" id="details" cols="30" rows="10"></textarea>
+                </div>
 
+                <button type="submit">Submit</button>
             </div>
         </div>
     </form>
