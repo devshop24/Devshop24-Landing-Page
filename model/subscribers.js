@@ -21,4 +21,4 @@ const SubscribersSchema = new Schema({
 
 const Subscribers = model('subscribers', SubscribersSchema);
 
-modules.exports = Subscribers;
+module.exports = Subscribers;
