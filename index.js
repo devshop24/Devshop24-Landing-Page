@@ -1,12 +1,12 @@
 const server = require( './server' );
 const config = require( './config' );
 
-const { PORT } = config;
+const { port } = config;
 
-server.listen(PORT, () => {
+server.listen(port, () => {
     console.log(
         `\n************************************************************
-         \n\t\tServer Running on port:${PORT}
+         \n\t\tServer Running on port:${port}
          \n************************************************************`
     )
 });
