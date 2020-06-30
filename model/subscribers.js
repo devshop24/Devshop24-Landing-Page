@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+const { Schema, model } = require( 'mongoose' );
 
 // Create Schema
 const SubscribersSchema = new Schema({

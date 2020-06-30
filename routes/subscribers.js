@@ -1,5 +1,5 @@
-import {Router} from "express";
-import Subscribers from "../model/subscribers";
+const { Router } = require( "express" );
+const Subscribers = require( "../model/subscribers" );
 
 const router = Router();
 
