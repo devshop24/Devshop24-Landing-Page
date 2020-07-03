@@ -46,7 +46,7 @@
     background-size: cover;
 }
 
-.about__carousel__slide.active {
+.about__carousel__slide.active-img {
     height: 390px;
     background-image: url('/images/about-bg-active.png');
 }

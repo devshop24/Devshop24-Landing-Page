@@ -64,10 +64,10 @@
     color: #333333;
 }
 
-.portfolio__slides__tabs ul .active {
+/* .portfolio__slides__tabs ul .active {
     font-weight: bold;
     border-bottom: 3px solid #5AB7C1;
-}
+} */
 
 .portfolio__slides__carousel {
     border: 1px solid green;
@@ -109,4 +109,12 @@
 
 .portfolio__carousel .selectors .active-selector {
     background-color: #ED9738;
+}
+
+.carousel-indicators li {
+    background-color: #ED9738;
+}
+
+.carousel-item img {
+    height: 576px;
 }
