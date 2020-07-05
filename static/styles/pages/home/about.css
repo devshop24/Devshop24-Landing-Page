@@ -44,6 +44,13 @@
     background-image: url('/images/about-bg.png');
     background-position: center;
     background-size: cover;
+
+    cursor: pointer;
+}
+
+.about__carousel__slide img {
+    height: 100%;
+    width: 100%;
 }
 
 .about__carousel__slide.active-img {

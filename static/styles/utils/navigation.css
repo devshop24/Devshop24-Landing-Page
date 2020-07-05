@@ -4,10 +4,12 @@ nav {
     align-items: center;
 
     position: fixed;
-    height: 65px;
+    height: 75px;
     width: 100vw;
     margin: 0;
-    padding-top: 20px;
+    padding: 15px 0;
+
+    z-index: 1000;
 }
 
 nav p {
@@ -15,7 +17,6 @@ nav p {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 28px;
 
     color: #E5E5E5;
 
@@ -23,6 +24,7 @@ nav p {
 }
 nav div {
     position: relative;
+    margin: 0;
 }
 
 .links {
@@ -31,7 +33,7 @@ nav div {
     align-items: center;
 
     width: 749px;
-    height: 65px;
+    height: 75px;
 }
 
 .links a {
@@ -43,7 +45,6 @@ nav div {
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
-    line-height: 31px;
 
     color: #E5E5E5;
     text-decoration: none;
@@ -68,8 +69,4 @@ nav div {
     border: none;
 
     text-align: center;
-}
-
-.links button a {
-
 }

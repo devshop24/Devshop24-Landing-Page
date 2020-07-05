@@ -1,0 +1,39 @@
+footer {
+    height: 217px;
+    width: 100%;
+    background-color: #1F2360;
+
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo {
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+.footer__links a {
+    font-family: Avenir Next;
+    font-size: 23px;
+
+    color: white;
+    cursor: pointer;
+
+    margin-right: 13px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__social p {
+    font-size: 23px;
+    color: #ED9738;
+    margin: 0 4px;
+
+    cursor: pointer;
+}

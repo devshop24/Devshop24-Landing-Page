@@ -9,15 +9,34 @@
         <link rel="stylesheet" href="/styles/index.css">
     </head>
     <body>
-        <%- include('partials/nav'); %>
+        <%- include('partials/components/nav'); %>
         <%- include('partials/home/header'); %>
         <%- include('partials/home/services'); %>
         <%- include('partials/home/portfolio'); %>
         <%- include('partials/home/about'); %>
-        <%- include('partials/home/contact'); %>
+        <%- include('partials/components/contact'); %>
+        <%- include('partials/components/newsletter'); %>
+        <%- include('partials/components/footer'); %>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="/static/scripts/nav_animation.js"></script>
+       <script>
+           window.addEventListener('scroll', () => {
+                window.scrollY < 100 ? document.getElementById( 'navigation' ).style.backgroundColor = 'transparent'
+                                        : document.getElementById( 'navigation' ).style.backgroundColor = '#1F2360'
+            });
+            const about_us = document.querySelectorAll( '.about__carousel__slide' );
+            
+            about_us.forEach((block, index) => {
+                if( index === 2 ) block.classList.add( 'active-img' );  
+
+                block.addEventListener('click', (event) => {
+                    document.querySelector( '.active-img' ).classList.remove( 'active-img' );
+                    block.classList.add( 'active-img' );
+                });
+            });
+        </script>
     </body>
 </html>
