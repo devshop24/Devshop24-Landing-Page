@@ -57,3 +57,14 @@
     height: 390px;
     background-image: url('/images/about-bg-active.png');
 }
+
+.about_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_title h3{
+    font-size: 18px;
+    font-weight: bold;
+}
