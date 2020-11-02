@@ -44,7 +44,7 @@
 .newsletter__form input {
     max-width: 552px;
     width: 100%;
-    height: 84px;
+    height: 10%;
 
     background: #EBF8FF;
     border-radius: 4px;
@@ -55,7 +55,7 @@
 
 .newsletter__form button {
     width: 290px;
-    height: 84px;
+    height: 10%;
     margin: 20px;
 
     background: #ED9738;
